@@ -5,4 +5,4 @@
 ![延展卡片](/延展卡片/images/preview.png)
 
 ## [02: 進度條](https://github.com/querlemtle/50-practices-of-HTML-CSS-Javascript/tree/main/%E9%80%B2%E5%BA%A6%E6%A2%9D)
-![進度條](/進度條/)
+![進度條](/進度條/preview.png)
