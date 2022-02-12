@@ -1,4 +1,4 @@
-# 50-practices-of-HTML-CSS-Javascript
+# 50個HTML-CSS-Javascript練習
 [**參考課程**](https://www.udemy.com/course/50-projects-50-days/)
 
 ## [01: 延展卡片](https://github.com/querlemtle/50-practices-of-HTML-CSS-Javascript/tree/main/%E5%BB%B6%E5%B1%95%E5%8D%A1%E7%89%87)
