@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #FDFAED;
+  --left-bg-color: rgba(236, 226, 192, 0.6);
+  --right-bg-color: rgba(61, 102, 68, 0.7);
+  --left-btn-hover-color: rgba(173, 145, 52, 1);
+  --right-btn-hover-color: rgba(166, 201, 168, 1);
+  --hover-width: 70%;
+  --other-width: 30%;
+  --speed: 1000ms;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 1px 1px 10px #999;
+  color: var(--text-color);
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%);
+  text-decoration: none;
+  color: var(--text-color);
+  border: 0.2rem var(--text-color) solid;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 10rem;
+  padding: 1.5rem; 
+}
+
+.split.left .btn:hover {
+  background-color: var(--left-btn-hover-color);
+  border: var(--left-btn-hover-color);
+}
+
+.split.right .btn:hover {
+  background-color: var(--right-btn-hover-color);
+  border: var(--right-btn-hover-color);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background-image: url("https://images.unsplash.com/photo-1630226040750-d934f017f0e4?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDkxNzU4Mw&ixlib=rb-1.2.1&q=85");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
+.split.right {
+  right: 0;
+  top: 0;
+  background-image: url("https://images.unsplash.com/photo-1517130038641-a774d04afb3c?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDkxODA1Mg&ixlib=rb-1.2.1&q=85");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+
+.split.left, .split.right, .split.left::before, .split.right::before{
+  transition: all var(--speed) ease;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+
+  .btn {
+    padding: 1.2rem;
+    width: 8rem;
+    top: 45%;
+  }
+}
