@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+  position: relative;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/headphones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#buttons {
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  top: 40%;
+  left: 0.5rem;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.2rem;
+  background-color: #022C3C;
+  border: transparent;
+  border-radius: 10px;
+  color: #EEF8FB;
+  padding: 10px 15px;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  background-color: #069d31;
+}
+
+.btn:focus {
+  outline: none;
+}
