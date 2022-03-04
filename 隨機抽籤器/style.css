@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E6BEAE;
+  color: #4D3C2D;
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+kbd {
+  background-image: linear-gradient(#F1D9D0, #E6BEAE);
+  border: 1px solid #4D3C2D;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 0 5px;
+}
+
+.container {
+  width: 500px;
+  position: relative;
+}
+
+#choice-textarea {
+  border: none;
+  border-radius: 5px;
+  background-color: #F9F5F1;
+  color: #4D3C2D;
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 1rem;
+}
+
+#choice-textarea:focus {
+  outline: 2px solid #756844;
+}
+
+.tag {
+  background-color: #53B8CA;
+  color: #eff9fa;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px 10px 0;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #226D2D;
+}
+
+#reset::before {
+  font: var(--fa-font-solid);
+  font-size: 3rem;
+  content: "\f01e";
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+#reset:hover::before {
+  transform: rotateZ(360deg);
+  transition: transform 0.5s linear;
+}
+
+#reset:hover::after {
+  content: "重置抽籤器";
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+}
