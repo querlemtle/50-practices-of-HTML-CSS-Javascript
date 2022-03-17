@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #353238;
+  color: #f5f4f5;
+  font-family: 'DM Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.counter-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 3.125rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.counter-container span {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
