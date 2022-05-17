@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background: repeating-linear-gradient(90deg, #F5BB00, #F5BB00 40px, #fff 40px, #fff 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.plate {
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+}
+
+.plate::after {
+  content: "";
+  width: 75%;
+  height: 75%;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.food {
+  background-image: url(./pizza.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 128px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  cursor: grab;
+}
+
+.hold {
+  background-color: transparent;
+}
+
+.hovered {
+  background-color: rgba(41, 31, 0, 0.8);
+  border: 3px dotted #E0A800;
+  border-radius: 50%;
+}
+
+.source {
+  margin: 0.5rem;
+  position: fixed;
+  bottom: 0;
+}
