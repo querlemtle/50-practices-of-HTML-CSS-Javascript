@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, rgba(0, 187, 224, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(2, 0, 36, 1) 100%);
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  border: 3px solid rgba(0, 212, 255, 1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px 0 rgba(0, 212, 255, 1);
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  background-color: rgba(0, 212, 255, 1);
+  box-shadow: none;
+}
+
+.toast-container {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.toast {
+  background-color: rgba(255, 140, 0, 0.3);
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border: 3px solid #ff4d00;
+  border-radius: 5px;
+}
