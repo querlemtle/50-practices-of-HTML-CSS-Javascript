@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0A2E33;
+  color: #EEFAFC;
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.form-input {
+  width: 100%;
+  display: block;
+  background-color: #229AAA;
+  color: #EEFAFC;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 15px 0 #22aa32;
+}
+
+.form-input::placeholder {
+  color: #EEFAFC;
+}
+
+.card {
+  max-width: 700px;
+  background-color: #229AAA;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05) 0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 10px solid #0A2E33;
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  margin-left: 2rem;
+}
+
+.user-name {
+  margin-top: 0;
+}
+
+.user-stats {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-stats li {
+  display: flex;
+  align-items: center;
+}
+
+.user-stats strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repo {
+  text-decoration: none;
+  color: #EEFAFC;
+  background-color: #3a8791;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-form {
+    max-width: 400px;
+  }
+}
