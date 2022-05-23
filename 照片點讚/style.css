@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.counter {
+  margin-bottom: 20px;
+}
+
+.fa-thumbs-up {
+  color: rgb(41, 171, 227);
+}
+
+.clickable-pic {
+  height: 400px;
+  width: 440px;
+  background: url("https://images.pexels.com/photos/920220/pexels-photo-920220.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center center/cover;
+  margin: auto;
+  max-width: 100%;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.thumbs-up {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
