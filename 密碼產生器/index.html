@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>密碼產生器</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="title">密碼產生器</h2>
+    <div class="result-container">
+      <span class="result" id="result"></span>
+      <button class="btn btn-copy" id="clipboard">
+        <i class="fa-regular fa-clipboard fa-lg"></i>
+      </button>
+    </div>
+    <div class="settings">
+      <div class="setting">
+        <label for="length">密碼長度</label>
+        <input type="number" name="length" id="length" min="5" max="20" value="20">
+      </div>
+      <div class="setting">
+        <label for="uppercase">包含大寫字母</label>
+        <input type="checkbox" name="uppercase" id="uppercase" checked>
+      </div>
+      <div class="setting">
+        <label for="lowercase">包含小寫字母</label>
+        <input type="checkbox" name="lowercase" id="lowercase" checked>
+      </div>
+      <div class="setting">
+        <label for="number">包含數字</label>
+        <input type="checkbox" name="number" id="number" checked>
+      </div>
+      <div class="setting">
+        <label for="symbols">包含特殊符號</label>
+        <input type="checkbox" name="symbols" id="symbols" checked>
+      </div>
+    </div>
+
+    <button class="btn btn-large" id="generate">生成密碼</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
