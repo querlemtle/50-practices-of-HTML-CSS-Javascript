@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+:root {
+  --button-background: #adf0dc;
+  --note-background: #eff9dc;
+  --dark-text-color: #0c1400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  background-color: #2E5200;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px), linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding-top: 3rem;
+}
+
+.add-note {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--button-background);
+  color: var(--dark-text-color);
+  box-shadow: 0 0 10px 4px rgba(23, 41, 0, 0.5);
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.add-note:active {
+  transform: scale(0.98);
+}
+
+.note {
+  background-color: var(--note-background);
+  box-shadow: 0 0 10px 4px rgba(23, 41, 0, 0.25);
+  margin: 30px 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.tools {
+  background-color: var(--button-background);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.tools-btn {
+  background-color: transparent;
+  color: var(--dark-text-color);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.btn-active {
+  color: #DF6C53;
+}
+
+.note-textarea {
+  resize: none;
+  background-color: inherit;
+  color: var(--dark-text-color);
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  width: 100%;
+  height: calc(100% - 2.5rem);
+  padding: 20px;
+}
+
+.rendered-text {
+  font-family: inherit;
+  font-size: 1.2rem;
+  width: 100%;
+  height: calc(100% - 2.5rem);
+  padding: 0 20px;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+}
