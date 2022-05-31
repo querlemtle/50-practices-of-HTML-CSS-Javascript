@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fd;
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+header {
+  background-color: #3e57db;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.container {
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  overflow: hidden;
+}
+
+.title {
+  margin: 0;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: 0.8;
+}
+
+.filter {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.filter:focus {
+  outline: none;
+}
+
+.user-list {
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.user {
+  display: flex;
+  padding: 20px;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.user-name {
+  margin: 0 0 10px;
+}
+
+.user-location {
+  font-size: 12px;
+}
+
+.user:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.user.hide {
+  display: none;
+}
+
+.loading-text {
+  text-align: center;
+}
