@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>請告訴我們您的想法</title>
+</head>
+
+<body>
+  <div class="panel-container" id="panel-container">
+    <h3>請問您對我們的客服滿意度為何？</h3>
+    <div class="rating-container">
+      <div class="rating" data-rating="不滿意">
+        <img src="https://cdn-icons-png.flaticon.com/512/1933/1933115.png" alt="unhappy">
+        <p class="rating-name">不滿意</p>
+      </div>
+      <div class="rating" data-rating="普通">
+        <img src="https://cdn-icons-png.flaticon.com/512/1933/1933511.png" alt="neutral">
+        <p class="rating-name">普通</p>
+      </div>
+      <div class="rating active" data-rating="滿意">
+        <img src="https://cdn-icons-png.flaticon.com/512/1933/1933691.png" alt="satisfied">
+        <p class="rating-name">滿意</p>
+      </div>
+    </div>
+    <button class="send-btn" id="send-btn">送出意見</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

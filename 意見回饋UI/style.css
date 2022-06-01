@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFCF9;
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+.panel-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 30px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+.rating-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.rating {
+  flex: 1;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px 5px;
+}
+
+.rating:hover,
+.rating.active {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.rating-name {
+  color: #777;
+  margin: 10px 0 0;
+}
+
+.rating:hover .rating-name,
+.rating.active .rating-name {
+  color: #111;
+}
+
+.send-btn {
+  background-color: #653E52;
+  box-shadow: 3px 3px 1px rgba(152, 93, 124, 0.5);
+  color: #f7f2f5;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+}
+
+.send-btn:focus {
+  outline: none;
+}
+
+.send-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.heart-symbol {
+  color: red;
+  font-size: 3rem;
+}
