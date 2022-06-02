@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+:root {
+  --queen-blue: #46688d;
+  --light-coral: #f1807e;
+  --old-lace: #fff7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--queen-blue);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+  transform: translateX(0);
+}
+
+.nav-blue {
+  background-color: var(--queen-blue);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+
+.nav-blue.visible {
+  transition-delay: 0s;
+}
+
+.nav-red {
+  background-color: var(--light-coral);
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.nav-red.nav.visible {
+  transition-delay: 0.2s;
+}
+
+.nav-gold {
+  background-color: var(--old-lace);
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+}
+
+.nav-gold.visible {
+  transition-delay: 0.4s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  opacity: 0.3;
+}
+
+.list-item {
+  margin: 20px 0;
+}
+
+.nav-sublist {
+  padding: 0 20px;
+}
+
+.list-subitem {
+  margin: 10px 0;
+}
