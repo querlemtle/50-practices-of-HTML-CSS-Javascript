@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, hsl(228, 50%, 90%) 50%, hsl(168, 50%, 75%) 100%);
+  color: hsl(20, 12%, 5%);
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  color: hsl(228, 50%, 50%);
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  opacity: 0.6;
+  position: relative;
+}
+
+h1::after {
+  content: "待辦清單";
+  color: hsl(228, 50%, 80%);
+  position: absolute;
+  top: 5%;
+  left: 0;
+  z-index: -1;
+}
+
+ul {
+  list-style-type: "📌";
+  margin: 0 auto;
+}
+
+form {
+  background-color: hsl(168, 50%, 98%);
+  box-shadow: 0 0 3px 0 hsla(20, 12%, 5%, 0.5);
+  border-radius: 10px;
+  max-width: 100%;
+  width: 400px;
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+input {
+  font-size: 1.5rem;
+  border: 2px solid hsl(228, 50%, 90%);
+  border-radius: 10px;
+  color: hsl(228, 50%, 20%);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 100%;
+}
+
+input:focus {
+  outline-color: hsl(228, 50%, 50%);
+}
+
+input::placeholder {
+  color: hsl(228, 50%, 60%);
+}
+
+.todo {
+  border-top: 2px dashed hsl(168, 50%, 80%);
+  cursor: pointer;
+  color: hsl(228, 50%, 20%);
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: hsl(228, 50%, 70%);
+}
