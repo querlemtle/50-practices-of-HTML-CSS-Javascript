@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f394d;
+  color: #eff1f5;
+  font-family: 'Noto Sans TC', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  transition: margin 0.5s ease-out;
+}
+
+.screen-up {
+  margin-top: -100vh;
+}
+
+.btn {
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+  border-image: linear-gradient(to right, hsl(260, 24%, 55%), hsl(160, 24%, 55%)) 1;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to right, hsl(260, 24%, 55%), hsl(160, 24%, 55%));
+}
+
+.bugs-list {
+  width: 40%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.choose-bug-btn {
+  width: 120px;
+}
+
+.game-container {
+  position: relative;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.message {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.bug {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 300px;
+  left: 350px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.caught {
+  transform: scale(0);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>抓蟲遊戲</title>
+</head>
+
+<body>
+  <div class="screen">
+    <h1>抓蟲遊戲</h1>
+    <h3>試試看你可以撐多久</h3>
+    <button class="btn start-btn" id="start-btn">開始遊戲</button>
+  </div>
+
+  <div class="screen">
+    <h1>請選擇你最「喜歡」的蟲：</h1>
+    <ul class="bugs-list">
+      <li class="bug-choice">
+        <button class="btn choose-bug-btn">
+          <p>蚊子</p>
+          <img src="/images/002-mosquito.png" alt="mosquito">
+        </button>
+      </li>
+
+      <li>
+        <button class="btn choose-bug-btn">
+          <p>蒼蠅</p>
+          <img src="/images/001-fly.png" alt="fly">
+        </button>
+      </li>
+
+      <li>
+        <button class="btn choose-bug-btn">
+          <p>蟑螂</p>
+          <img src="/images/004-cockroach.png" alt="cockroach">
+        </button>
+      </li>
+
+      <li>
+        <button class="btn choose-bug-btn">
+          <p>蜘蛛</p>
+          <img src="/images/003-spider.png" alt="spider">
+        </button>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="screen game-container">
+    <h3 class="time" id="time">時間：00 : 00</h3>
+    <h3 class="score" id="score">分數：0</h3>
+    <h4 class="message" id="message">你累了嗎？🙃</h4>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
