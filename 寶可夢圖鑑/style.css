@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #F5F5F5;
+  background-image: linear-gradient(90deg, #FDDFDF 0%, #DEFDE0 50%, #DEF3FD 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Noto Sans TC", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+img {
+  max-width: 90%;
+}
+
+.title {
+  color: #45a545;
+  letter-spacing: 3px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.card {
+  width: 150px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  text-align: center;
+}
+
+.img-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+.info {
+  margin: 10px auto;
+}
+
+.name {
+  margin: 15px 0 7px;
+  letter-spacing: 1px;
+}
+
+.icon {
+  width: 25px;
+  height: auto;
+  vertical-align: text-bottom;
+}
